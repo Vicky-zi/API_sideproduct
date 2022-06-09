@@ -1,0 +1,27 @@
+.page-style>a:hover {
+  color: $gray-700 !important;
+  background-color: $gray-200 !important;
+
+}
+
+
+.page-style.active> a {
+
+    // color: white;
+    background-color: $dark !important;
+    &:hover {
+      background-color: $gray-200;
+    }
+
+}
+
+.page-style > a {
+
+  color: $dark;
+  border: 0;
+
+  &.active {
+    color: white;
+    background-color: $dark;
+  }
+}

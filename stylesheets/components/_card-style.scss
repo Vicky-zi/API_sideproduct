@@ -1,0 +1,36 @@
+.bg-img {
+    height: 400px;
+    background-size: cover;
+    background-position: center center; 
+       
+}
+
+.card-hover {
+    position: relative;
+    overflow:hidden;
+    min-width:60px;
+    margin:1px;
+    transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    border-radius:5%;
+    
+    .text-style {
+        display: none;;
+    }
+
+    
+    &:hover {
+        flex-grow:10000;
+        transform:scale(1);
+            
+        max-width:600px;
+        margin:0px;
+        border-radius:2%;
+            
+
+        .text-style {
+            display: block;
+        }
+        
+    }
+}
+
